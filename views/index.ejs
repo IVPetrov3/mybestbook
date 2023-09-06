@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="skeletonami.css" />
+    <title>My Best Book</title>
+</head>
+<body>
+    <div class="fullContainer">
+    </div>
+    <div class="maincontent">
+        <h2>Personalised childen's books</h2>
+        <form id="mainForm" action="/submit" method="POST">
+            <label for="name" >Enter the child's name</label><br>
+            <input type="text" id="name" name="name" placeholder="Eg. Ron"><br>
+            
+            <label for="gender">Choose the child's gender</label><br>
+            <input type="radio" id="choice1" name="gender" value="male" required />
+            <label for="choice1">Male</label>
+            <input type="radio" id="choice2" name="gender" value="female" />
+            <label for="choice2">Female</label>
+            <br>
+            
+            <button type="submit">Submit</button>
+
+            <div class="container mt-15">
+                <% if(typeof errors != 'undefined'){ %>
+                    <% errors.forEach(function(errors) {%>
+                        <div class="alert alert-danger"><%= errors.msg %></div>
+                    <% }); %>
+                <% } %>
+            </div>
+
+        </form>
+</div>
+
+</body>
+</html>
+<footer>
+</footer>
+</body>
+</html>

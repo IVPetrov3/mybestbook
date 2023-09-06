@@ -1,0 +1,56 @@
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+}
+.fullContainer {
+    background-image: url(mybestbookpic2.png);
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+.maincontent {
+    text-align: center;
+    padding: 40px;
+    background-color: beige;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.secondContent {
+    text-align: center;
+    margin-top: 15px;
+}
+.secondContent p {
+    font-size: 25px;
+}
+#mainForm {
+    font-size: 25px;
+    margin-top: 35px;
+}
+#mainForm #name {
+    min-height: 40px;
+    border-radius: 5px;
+    min-width: 280px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#mainForm button {
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: gainsboro;
+    min-width: 175px;
+    min-height: 50px;
+    border-radius: 12px;
+}
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
